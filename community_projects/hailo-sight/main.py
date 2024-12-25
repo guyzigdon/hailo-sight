@@ -11,8 +11,12 @@ def main():
 
     try:
         while True:  # Take 10 pictures
-            camera.capture(f'image_{i}.jpg')  # Save the image
-            print(f'Captured image_{i}.jpg')
+            camera.capture(f'image_.jpg')  # Save the image
+            if detect_signal('image_.jpg'):
+                print(f'Detected a hand in image.jpg')
+            else:
+                print(f'No hand detected in image.jpg')
+            print(f'Captured image.jpg')
             time.sleep(3)  # Wait for 3 seconds
     finally:
         camera.close()  
