@@ -10,7 +10,7 @@ def main():
     camera.resolution = (640, 480)
 
     try:
-        while True:  # Take 10 pictures
+        while True:
             camera.capture(f'image_.jpg')  # Save the image
             if detect_signal('image_.jpg'):
                 print(f'Detected a hand in image.jpg')
