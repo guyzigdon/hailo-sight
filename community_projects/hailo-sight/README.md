@@ -16,6 +16,9 @@
 
 ## Installation
 
+- Download the hef file of the networks:
+      
+
 - Install python packages:
     ```bash
     pip install -r requirements.txt
@@ -24,5 +27,7 @@
     ```bash
     python main.py
     ```
+
+
 
     
